@@ -1,0 +1,56 @@
+/* Wrapper to center everything */
+.firS1-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Section title styling */
+  .firS1-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(207, 195, 207);
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+  
+  /* Container with background image */
+  .firS1-container {
+    position: relative;
+    width: 70%; /* Adjust width as needed */
+    max-width: 800px;
+    padding: 40px;
+    background-image: url("../../assets/bio_muscles_bg.png"); /* Change this to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: white; /* Text color */
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Overlay effect 
+  .firS1-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 20px;
+    z-index: 1;
+  } */
+  
+  /* Ensure text appears above overlay */
+  .firS1-container p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+  
